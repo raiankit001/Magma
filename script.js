@@ -1,3 +1,26 @@
+// cursor
+
+const cursor = document.getElementById("cursor")
+const cursorDot = document.getElementById("cursor-dot")
+document.addEventListener('mousemove',(e)=>{
+    var x = e.clientX
+    var y = e.clientY
+
+    cursorDot.style.left = x+"px"
+    cursorDot.style.top = y+"px"
+    
+    // cursor.style.left = x+"px"
+    // cursor.style.top = y+"px"
+
+    cursor.animate({
+      left:  x+"px",
+      top: y+"px"
+    },{duration:500, fill:"forwards"})
+})
+
+
+
+
 function loco() {
   gsap.registerPlugin(ScrollTrigger);
 
