@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Card</title>
+    <style>
+        .card {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .card.expanded {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 90vw;
+            height: 90vh;
+            background-color: white;
+            z-index: 999;
+        }
+
+        .content {
+            display: none;
+            padding: 20px;
+        }
+
+        .close-btn {
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" onclick="expandCard(this)">
+        <h2>Click to Expand</h2>
+        <div class="content">
+            <p>This is some content that appears when the card is expanded.</p>
+            <button class="close-btn" onclick="closeCard(this)">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function expandCard(card) {
+            card.classList.add('expanded');
+            const content = card.querySelector('.content');
+            const closeBtn = card.querySelector('.close-btn');
+            content.style.display = 'block';
+            closeBtn.style.display = 'block';
+        }
+
+        function closeCard(closeBtn) {
+            const card = closeBtn.closest('.card');
+            card.classList.remove('expanded');
+            const content = card.querySelector('.content');
+            content.style.display = 'none';
+            closeBtn.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
