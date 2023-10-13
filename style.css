@@ -13,8 +13,8 @@ html,body{
     height: 100%;
 }
 body{
-    /* background-color: #1137CA; */
     cursor: none;
+    background-color: #0a3cce;
 }
 :root{
     --white1:#ffff;
@@ -26,10 +26,6 @@ body{
     --blue3:#1137CA;
     --font-jost:'Jost', sans-serif;
 }
-/* @font-face { */
-    /* font-family: a; */
-    /* src: url(.); */
-/* } */
 #cursor{
     width:50px;
     height: 50px;
@@ -48,6 +44,7 @@ body{
     position: absolute;
     transform: translate(-50%,-50%);
 }
+
 
 #main{
     position: relative;
@@ -78,7 +75,6 @@ body{
     border: 1px solid var(--white3);
     padding: 10px 20px;
     font-size:15px;
-
 }
 
 #page1>.bottom-page-1{
@@ -169,7 +165,7 @@ body{
 
 #page-7 .circle-loder{
     width: 14vw;
-    aspect-ratio: 1/1;
+   height: 14vw;
     border: 1px solid var(--white3);
     position: absolute;
     border-radius: 50%;
@@ -180,7 +176,7 @@ body{
 
 #page-7 .circle-loder .circle-loader-inner{
     width: 10vw;
-    aspect-ratio: 1/1;
+    height: 10vw;
     border: 1px solid var(--white2);
     position: absolute;
     border-radius: 50%;   
@@ -199,7 +195,7 @@ body{
 /* ------------------------------ */
 #page-8{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: end;
