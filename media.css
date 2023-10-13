@@ -1,0 +1,89 @@
+@media screen and (max-width: 700px) {
+    #page1>nav {
+        padding: 10px 10px;
+        margin-top: 0;
+    }
+    #page1>.bottom-page-1>h1{
+        font-size: 3rem;
+    }
+#page1>.bottom-page-1>.desc>button,#page-8>button {
+    background-color: rgba(255, 255, 255, 0.543);
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: 1px solid white;
+}
+
+#page-2>p,#page-4>p,#page-6>p{
+    font-size:  2rem;
+    line-height: 3rem;
+    margin-bottom: 0px;
+}
+
+#page-7 .circle-loder{
+    width: 40vw;
+    height: 40vw
+}
+#page-7 .circle-loder .circle-loader-inner{
+    width: 30vw;
+    height: 30vw
+}
+
+
+#page-7 .circle-loder .circle-loader-inner>div,
+#page-7 .circle-loder .circle-loader-inner>span{
+    font-size: 5px;
+    text-align: center;
+}
+
+#page-8>div{
+    font-size: 6vh;
+}
+
+#page-9{
+    margin: 10vh 0;
+    flex-direction: column;
+    padding: 0;
+}
+#page-9>.col1{
+    font-size: 5rem;
+    width: 100vw;
+    text-align: center;
+}
+#page-9>.col2{
+    padding: 10px;
+}
+
+#page-13{
+    display: none;
+}
+#page-14{
+    text-align: center;
+}
+#page-14>h2{
+    text-align: center;
+    padding: 10vh 10px;
+}
+#page-14>button{
+    margin:auto ;
+    width: 200px;
+    margin-bottom: 20vw;
+}   
+}
+
+@media screen and (max-width: 1400px) {
+
+    #cursor,
+    #cursor-dot {
+        display: none;
+    }
+
+    body {
+        cursor: default;
+    }
+
+    #page1 .btns>button,
+    #page-14>button {
+        cursor: pointer;
+    }
+
+}
